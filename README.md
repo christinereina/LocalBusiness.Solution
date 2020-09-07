@@ -1,4 +1,4 @@
-# <h1 align = "center"> Local Business Finder (Miyazaki Edition)
+# <h1 align = "center"> Local Business Finder (Ghibli Edition)
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-This project will create an API for a fictional local business lookup within the Studio Ghibili universe. The API will list different businesses available.  
+This project will create an API for a fictional local business lookup within the *Studio Ghibli* universe. The API will list different businesses available such as Totoro's Seeds & Trees, Yubaba's BathHouse, Ponyo & Sōsuke Boat Rental and more.  
 
 ## Setup/Installation Requirements 
 
@@ -87,14 +87,7 @@ http://127.0.0.1:5000
 
 See the API endpoints in Postman or a browser.
 
-### Using [Swagger](https://swagger.io/) Documentation
-To explore the LocalBusiness API, launch the project using `dotnet run` with the Terminal and copy and paste the following URL in your preferred browser
-
-```
-`http://localhost:5000/swagger`
-```
-
-## Endpoints
+### API Endpoints
 
 ```
 GET /api/Businesses
@@ -102,6 +95,13 @@ POST /api/Businesses
 GET /api/Businesses/{id}
 PUT /api/Businesses/{id}
 DELETE /api/Businesses/{id}
+```
+
+### Using [Swagger](https://swagger.io/) Documentation
+To explore the LocalBusiness API, launch the project using `dotnet run` with the Terminal and copy and paste the following URL in your preferred browser
+
+```
+`http://localhost:5000/swagger`
 ```
 
 ## Further Exploration 
