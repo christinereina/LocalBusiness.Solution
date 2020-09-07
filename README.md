@@ -1,13 +1,14 @@
 # <h1 align = "center"> Local Business Finder (Miyazaki Edition)
 
-<p align="center">
+<div align="center">
 
 ![Preview](miyazaki_preview.png)
+</div>
 
 ##### <h4 align = "center">  Building an API, Indepedent Project for Epicodus, 08.21.2020
 
 #### <h4 align = "center"> By _**Christine Augustine**_
-</p>
+
 
 ## Description
 
