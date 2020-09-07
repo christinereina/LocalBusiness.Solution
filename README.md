@@ -1,12 +1,13 @@
 # <h1 align = "center"> Local Business Finder (Miyazaki Edition)
 
-<img align = "center">
+<p align="center">
 
 ![Preview](miyazaki_preview.png)
 
 ##### <h4 align = "center">  Building an API, Indepedent Project for Epicodus, 08.21.2020
 
 #### <h4 align = "center"> By _**Christine Augustine**_
+</p>
 
 ## Description
 
@@ -102,23 +103,18 @@ PUT /api/Businesses/{id}
 DELETE /api/Businesses/{id}
 ```
 
+## Further Exploration 
+
+Here are some features I would like to incorporate into my API in the future:
+
+* Token-Based Authentication and Authorization
+* API Versioning
+* Pagination
+* Enable CORS
+
 ## Known Bugs
 
 n/a
-
-## Support and contact details
-
-<p>
-    <br>
-    <a href="https://github.com/christinereina">
-        <img src="https://avatars3.githubusercontent.com/u/59573479?s=60&v=4">
-    </a>
-    </p>
-    <p>
-        <a href="https://github.com/christinereina">
-            <strong>christinereina</strong>
-        </a>
-</p>
 
 ## Technologies Used
 
@@ -134,6 +130,20 @@ n/a
 * GitHub
 * [Swagger](https://swagger.io/)
 
+
+## Support and contact details
+
+<p>
+    <br>
+    <a href="https://github.com/christinereina">
+        <img src="https://avatars3.githubusercontent.com/u/59573479?s=60&v=4">
+    </a>
+    </p>
+    <p>
+        <a href="https://github.com/christinereina">
+            <strong>christinereina</strong>
+        </a>
+</p>
 
 ### License
 
