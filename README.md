@@ -1,8 +1,8 @@
 # <h1 align = "center"> Local Business Finder (Miyazaki Edition)
 
-<!-- <img align = "center">
+<img align = "center">
 
-![Preview](./Factory/wwwroot/) -->
+![Preview](miyazaki_preview.png)
 
 ##### <h4 align = "center">  Building an API, Indepedent Project for Epicodus, 08.21.2020
 
@@ -10,11 +10,11 @@
 
 ## Description
 
-This project will create an API for a local business lookup. The API will list different businesses available. 
+This project will create an API for a fictional local business lookup within the Studio Ghibili universe. The API will list different businesses available.  
 
 ## Setup/Installation Requirements 
 
-### 1. Install .NET Core 
+### Install .NET Core 
 
 Download .NET Core SDK from Microsoft Corp  (**[macOS](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer) | [Windows OS](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer)**)
 
@@ -22,7 +22,7 @@ Download .NET Core SDK from Microsoft Corp  (**[macOS](https://dotnet.microsoft.
 
 Enter the command `dotnet tool install -g dotnet-script` in Terminal 
 
-### 2. Install MySQL and MySQL Workbench
+### Install MySQL and MySQL Workbench
 
 Start by downloading the MySQL Community Server .dmg file [HERE](https://dev.mysql.com/downloads/file/?id=484914). Click the download icon. Use the *No thanks, just start my download link*.
 2. Follow along with the Install, once on the configuation make sure you:
@@ -32,28 +32,45 @@ Start by downloading the MySQL Community Server .dmg file [HERE](https://dev.mys
 4. Next, download the MySQL Workbench .dmg file [HERE](https://dev.mysql.com/downloads/file/?id=484391). Again, use the *No thanks, just start my download link*.
 5.Install MySQL Workbench to Applications folder.
 
-*more instructions coming soon*
+#### [Download and install Postman](https://www.postman.com/downloads/)  (Optional) 
 
-
-### 3. Clone this [repository](https://github.com/christinereina/LocalBusiness.Solution) from GitHub
+### Clone this [repository](https://github.com/christinereina/LocalBusiness.Solution) from GitHub
 ```
 cd desktop
 git clone https://github.com/christinereina/LocalBusiness.Solution
 cd Wonka.Solution
 ```
-### 4. Install the necessary dependencies to build the project, run the following commands in your Terminal:
-```
-dotnet restore
-dotnet build
-dotnet run
-```
-### 4. Create the database and project tables
+
+### AppSettings
+
+ Create a new file named `appsettings.json` in the LocalBusiness.Solution/LocalBusiness directory. Add the following code:
+  
+  ```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=local_business;uid=root;pwd=YOUR_PASSWORD_HERE;"
+  }
+}
+  ```
+Change the server, port, and userid as needed. Replace YOUR_PASSWORD_HERE with the password used for MySQL.
+
+### Create the database and project tables
+
+Navigate to LocalBusiness.Solution/LocalBusiness. Run the following command in the terminal:
+
 ```
 dotnet ef database update
 ```
-### 6. Starting the Server
+### Launch the API
 
-Initialize a local server to run the project in your browser
+Initialize a local server to access the API in your browser or in Postman. Run the following command in the terminal:
+
 ```
 dotnet watch run
 ```
@@ -64,15 +81,44 @@ If you are running the script locally, it will open the project in your browser 
 http://127.0.0.1:5000
 ```
 
+## API Documentation
+
+See the API endpoints in Postman or a browser.
+
+### Using [Swagger](https://swagger.io/) Documentation
+To explore the LocalBusiness API, launch the project using `dotnet run` with the Terminal and copy and paste the following URL in your preferred browser
+
+```
+`http://localhost:5000/swagger`
+```
+
+## Endpoints
+
+```
+GET /api/Businesses
+POST /api/Businesses
+GET /api/Businesses/{id}
+PUT /api/Businesses/{id}
+DELETE /api/Businesses/{id}
+```
 
 ## Known Bugs
 
-Swagger is not yet correctly implemented (8.21.2020)
+n/a
 
 ## Support and contact details
 
-Please feel free to contact the author through GitHub **[christinereina](https://github.com/christinereina)** with any feedback, questions or concerns.
-
+<p>
+    <br>
+    <a href="https://github.com/christinereina">
+        <img src="https://avatars3.githubusercontent.com/u/59573479?s=60&v=4">
+    </a>
+    </p>
+    <p>
+        <a href="https://github.com/christinereina">
+            <strong>christinereina</strong>
+        </a>
+</p>
 
 ## Technologies Used
 
