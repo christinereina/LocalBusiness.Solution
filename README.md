@@ -101,7 +101,7 @@ DELETE /api/Businesses/{id}
 To explore the LocalBusiness API, launch the project using `dotnet run` with the Terminal and copy and paste the following URL in your preferred browser
 
 ```
-`http://localhost:5000/swagger`
+http://localhost:5000/swagger
 ```
 
 ## Further Exploration 
